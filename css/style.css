@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    z-index: -1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.usersBox{
+    display: flex;
+    border-bottom: 2px solid black;
+    color: black;
+    align-items: center;
+    justify-items: center;
+    max-width: fit-content;
+    padding: 1.2rem;
+    font-weight: bold;
+    font-size: large;
+    grid-row-start: 2;
+}
+
+.container {
+    grid-column-start: 2;
+}
+
+.button {
+    border-radius: 16px;
+    background-color: green;
+    color: white;
+    grid-row-start: 2;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1.2rem;
+    z-index: 9;
+    display: block;
+}
+
+.buttoncon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 1;
+}
+
+.intake {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.hideMe {
+    display: none;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.radio .label {
+    grid-row: span 2;
+}
+
+.radio .right {
+    grid-column-start: 2;
+}

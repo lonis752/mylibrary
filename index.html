@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
-    <script src="/js/script.js"></script>
+    <div class="left">
+      <div class="buttoncon"><button id="button" type="button" class="button">New Book</button></div>
+      <form class="intake">
+        <div class="hideMe">
+          <label for="title">Title</label>
+          <input type="text" name="title" />
+        </div>
+        <div class="hideMe">
+          <label for="author">Author</label>
+          <input type="text" name="author"/>
+        </div>
+        <div class="hideMe">
+          <label for="page">Page Count</label>
+          <input type="number" name="page" id="title"/>
+        </div>
+        <div class="radio hideMe">
+          <div class="label hideMe"><label for="read">Have you read this book?</label></div>
+          <div class="hideMe">
+            <input type="radio" id="read" name="read" value="read">
+            <label for="read"> I have read</label>
+          </div>
+          <div class="right hideMe">
+            <input type="radio" id="read" name="read" value="read">
+            <label for="read"> I have not read</label>
+          </div>
+        </div>
+        <div class="hideMe">
+          <button type="submit" class="btn">Add Book</button>
+        </div>
+      </form>
+    </div>
+    <div class="container"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
